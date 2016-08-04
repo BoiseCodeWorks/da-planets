@@ -1,20 +1,20 @@
 ;(function(){
 
   const router = require('express').Router();
-  const Planet = require('../models/planet-model');
+  const Galaxy = require('../models/galaxy-model');
 
-  module.exports.mountPath = '/planets'
+  module.exports.mountPath = '/galaxies'
   module.exports.router = router;
 
   router.route('/:id?')
     .get(function(req, res){
-      Planet.getAll(function(data){
-        res.send(data);
+      Galaxy.getAll(function(galaxies){
+        res.send(galaxies);
       });
     })
     .post(function(req, res){
-      Planet.createPlanet(req.body.name, req.body.galaxyId, function(planet){
-        return res.send(planet)
+      Galaxy.createGalaxy(req.body.name, function(galaxy){
+        return res.send(galaxy)
       })
     })
     .put(function(req, res){
