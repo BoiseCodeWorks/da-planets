@@ -35,7 +35,7 @@
 
   function formatQuery(query){
     if(query){
-      query = query.split(',') 
+      query = query.split(',').join(' ').split(' ') 
     }
     let options = {
       with: query 
