@@ -19,6 +19,10 @@
         moon:{
           localField: 'moons',
           foreignKey: 'planetId'
+        },
+        species: {
+          localField: 'species',
+          foreignKeys: 'planetIds'
         }
       }
     }
@@ -57,7 +61,8 @@
   module.exports = {
     getAll,
     createPlanet,
-    getById
+    getById,
+    Planet
   }
 
 
