@@ -8,9 +8,15 @@
 
   router.route('/:id?')
     .get(function(req, res){
-      Planet.getAll(function(data){
-        res.send(data);
-      });
+      if(req.params.id){
+        Planet.getById(req.params.id, function(planet){
+          res.send(planet);
+        })
+      }else {
+        Planet.getAll(function(data){
+          res.send(data);
+        });
+      }
     })
     .post(function(req, res){
       Planet.createPlanet(req.body.name, req.body.galaxyId, function(planet){

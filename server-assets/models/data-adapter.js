@@ -1,4 +1,4 @@
-;(function(){
+; (function () {
 
   let uuid = require('node-uuid'),
     JsData = require('js-data'),
@@ -17,4 +17,4 @@
   }
 
 
-}());
+} ());

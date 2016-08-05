@@ -8,9 +8,15 @@
 
   router.route('/:id?')
     .get(function(req, res){
-      Galaxy.getAll(function(galaxies){
-        res.send(galaxies);
-      });
+      if(req.params.id){
+        Galaxy.getById(req.params.id, req.query.include, function(galaxy){
+          return res.send(galaxy)
+        })
+      }else{
+        Galaxy.getAll(req.query.include, function(galaxies){
+          return res.send(galaxies);
+        });
+      }
     })
     .post(function(req, res){
       Galaxy.createGalaxy(req.body.name, function(galaxy){

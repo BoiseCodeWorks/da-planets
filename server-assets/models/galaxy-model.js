@@ -13,6 +13,14 @@
         planet: {
           localField: 'planets',
           foreignKey: 'galaxyId'
+        },
+        star: {
+          localField: 'stars',
+          foreignKey: 'galaxyId'
+        },
+        moon: {
+          localField: 'moons',
+          foreignKey: 'galaxyId'
         }
       }
     }
@@ -25,17 +33,30 @@
     }).then(cb)
   }
 
-  function getAll(cb) {
-    let query = {};
-    let options = {
-      with: ['planet']
+  function formatQuery(query){
+    if(query){
+      query = query.split(',') 
     }
-    Galaxy.findAll(query, options).then(cb)
+    let options = {
+      with: query 
+    }
+    return options
+  }
+
+  function getAll(query,cb) {
+    query = formatQuery(query);
+    Galaxy.findAll({}, query).then(cb)
+  }
+
+  function getById(id, query, cb){
+    query = formatQuery(query);
+    Galaxy.find(id, query).then(cb)
   }
 
   module.exports = {
     createGalaxy,
-    getAll
+    getAll,
+    getById
   }
 
 } ());

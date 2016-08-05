@@ -14,11 +14,18 @@
           localField: 'galaxy',
           foreignKey: 'galaxyId'
         }
+      },
+      hasMany: {
+        moon:{
+          localField: 'moons',
+          foreignKey: 'planetId'
+        }
       }
     }
   })
 
   schemator.defineSchema('Planet', {
+    id: { type: 'string', nullable: false },
     name: { type: 'string', nullable: false },
     galaxyId: { type: 'string', nullable: false }
   })
@@ -36,14 +43,21 @@
   }
 
   function getAll(cb) {
-    Planet.findAll().then(function (planets) {
-      return cb(planets)
-    })
+    Planet.findAll().then(cb)
   }
+
+  function getById(id, cb){
+    let options = {
+      with: ['moon']
+    }
+    Planet.find(id, options).then(cb)
+  }
+
 
   module.exports = {
     getAll,
-    createPlanet
+    createPlanet,
+    getById
   }
 
 
