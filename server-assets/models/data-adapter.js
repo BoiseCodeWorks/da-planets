@@ -9,7 +9,6 @@
       basePath: process.env.DBCONNECTION || 'https://da-planets.firebaseio.com/'
     }),
     schemator = new Schemator(),
-    adapter = new NeDbAdapter(),
     DS = new JsData.DS();
 
   DS.registerAdapter('firebase', fbAdapter, { default: true })

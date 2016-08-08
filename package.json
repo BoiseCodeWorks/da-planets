@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js",
+    "db-setup": "node sql-setup.js"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +19,9 @@
     "js-data-firebase": "^2.1.1",
     "js-data-nedb": "^1.0.0",
     "js-data-schema": "^1.2.5",
-    "node-uuid": "^1.4.7"
+    "js-data-sql": "^0.11.17",
+    "knex": "^0.11.9",
+    "node-uuid": "^1.4.7",
+    "pg": "6.0.3"
   }
 }
