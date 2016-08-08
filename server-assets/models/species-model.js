@@ -37,14 +37,8 @@
   function inhabitPlanet(speciesId, planetId, cb) {
     Species.find(speciesId).then(
       function (species) {
-        if (!species) {
-          return cb({ error: 'BAD SPECIES ID' })
-        }
         Planet.find(planetId).then(
           function (planet) {
-            if (!planet) {
-              return cb({ error: 'BAD PLANET ID' })
-            }
             species.planetIds[planetId] = planetId
             Species.update(speciesId, species).then(
               function (sp) {

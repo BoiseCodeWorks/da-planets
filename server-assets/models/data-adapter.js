@@ -4,11 +4,15 @@
     JsData = require('js-data'),
     Schemator = require('js-data-schema'),
     NeDbAdapter = require('js-data-nedb'),
+    FirebaseAdapter = require('js-data-firebase'),
+    fbAdapter = new FirebaseAdapter({
+      basePath: process.env.DBCONNECTION || 'https://da-planets.firebaseio.com/'
+    }),
     schemator = new Schemator(),
     adapter = new NeDbAdapter(),
     DS = new JsData.DS();
 
-  DS.registerAdapter('nedb', adapter, { default: true })
+  DS.registerAdapter('firebase', fbAdapter, { default: true })
 
   module.exports = {
     DS,
