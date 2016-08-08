@@ -7,6 +7,7 @@
 
 let Star = DS.defineResource({
   name: 'star',
+	endpoint: 'stars',
   filepath: __dirname + '/../data/stars.db',
   relations: {
     belongsTo: {

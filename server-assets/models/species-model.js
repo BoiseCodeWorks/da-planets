@@ -9,6 +9,7 @@
 
   let Species = DS.defineResource({
     name: 'species',
+		endpoint: 'species',
     filepath: __dirname + '/../data/species.db',
     relations: {
       hasMany: {
@@ -45,6 +46,7 @@
             if (!planet) {
               return cb({ error: 'BAD PLANET ID' })
             }
+						species.planetIds = species.planetIds || {}
             species.planetIds[planetId] = planetId
             Species.update(speciesId, species).then(
               function (sp) {

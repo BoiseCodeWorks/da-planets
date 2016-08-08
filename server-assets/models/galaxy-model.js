@@ -7,6 +7,7 @@
 
   let Galaxy = DS.defineResource({
     name: 'galaxy',
+		endpoint: 'galaxies',
     filepath: __dirname + '/../data/galaxies.db',
     relations: {
       hasMany: {
