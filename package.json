@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "db-setup": "node sql-setup.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
