@@ -5,7 +5,7 @@ Da-Planets
 
 <img src="http://i.imgur.com/cH6Jk.jpg" alt="space" width="600">
 
-Although it may be the "Final Frontier" we can still learn a lot from what we already know about SPACE....
+Although it may be the "Final Frontier" but we can still learn a lot from what we already know about SPACE....
 
 Perhaps one of the most difficult problems we face when building software is managing the relationships between objects. Life has almost an immeasurable level of connections and it is this vastness that makes building scalable software tasking. Fortunately most relationships can be describe as one of the following connections. 
 
@@ -15,9 +15,7 @@ Perhaps one of the most difficult problems we face when building software is man
 
 Intelligent software companies will take a careful amount of time planning out these relationships prior to ever writing their first line of code for an application. While it may apear to many as a slow way to start an application having a clear consice plan of these relationships will save countless hours and <a href="http://rs674.pbsrc.com/albums/vv101/reeenda/writing_process.gif~c200" target="_blank">keyboard headbanging (***WARNING: Graphic stick figure death***)</a> from being the number one cause of death for a developer. 
 
-Real world relationships are complex and often look something like this when brought into code
-
-<img src=”http://boycottnovell.com/wp-content/uploads/2010/02/software-map-with-arrows.png” alt=”relatioship-hell” width=”600” />
+Real world relationships are complex and often look something like <a href=”http://boycottnovell.com/wp-content/uploads/2010/02/software-map-with-arrows.png” target="_blank">this</a> when brought into code
 
 With all of the complexities involved in building out all of these relationships developers often turn to an <a href=”https://en.wikipedia.org/wiki/Object-relational_mapping” target=”_blank”>ORM (Object Relational Mapper).</a>
 
