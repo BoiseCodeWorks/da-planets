@@ -9,57 +9,26 @@
     name: 'galaxy',
 		endpoint: 'galaxies',
     filepath: __dirname + '/../data/galaxies.db',
-    relations: {
-      hasMany: {
-        planet: {
-          localField: 'planets',
-          foreignKey: 'galaxyId'
-        },
-        star: {
-          localField: 'stars',
-          foreignKey: 'galaxyId'
-        },
-        moon: {
-          localField: 'moons',
-          foreignKey: 'galaxyId'
-        },
-        species: {
-          localField: 'species',
-          foreignKeys: 'galaxyIds'
-        }
-      }
-    }
+    relations: {}
   })
 
-  function createGalaxy(name, cb) {
-    Galaxy.create({
-      id: uuid.v1(),
-      name: name
-    }).then(cb)
-  }
-
-  function formatQuery(query){
-    if(query){
-      query = query.split(',').join(' ').split(' ') 
-    }
-    let options = {
-      with: query 
-    }
-    return options
+  function create(name, cb) {
+    // Use the Resource Model to create a new galaxy
+    Galaxy.create({id: uuid.v4(), name: name}).then(cb).catch(cb)
   }
 
   function getAll(query,cb) {
-    query = formatQuery(query);
-    Galaxy.findAll({}, query).then(cb)
+    //Use the Resource Model to get all Galaxies
+    Galaxy.findAll({}).then(cb)
   }
 
   function getById(id, query, cb){
-    query = formatQuery(query);
-    Galaxy.find(id, query).then(cb)
+    // use the Resource Model to get a single galaxy by its id
+    Galaxy.find(id).then(cb).catch(cb)
   }
 
   module.exports = {
-    createGalaxy,
+    create,
     getAll,
     getById
   }
