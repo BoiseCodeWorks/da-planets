@@ -5,7 +5,7 @@ Da-Planets
 
 <img src="http://i.imgur.com/cH6Jk.jpg" alt="space" width="600">
 
-Although it may be the "Final Frontier" we can still learn a lot from what we already know about SPACE....
+Although it may be the "Final Frontier" but we can still learn a lot from what we already know about SPACE....
 
 Perhaps one of the most difficult problems we face when building software is managing the relationships between objects. Life has almost an immeasurable level of connections and it is this vastness that makes building scalable software tasking. Fortunately most relationships can be describe as one of the following connections. 
 
