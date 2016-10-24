@@ -1,2 +1,5 @@
 node_modules
 sql-setup
+*.log
+thumbs.db
+DS_Store
