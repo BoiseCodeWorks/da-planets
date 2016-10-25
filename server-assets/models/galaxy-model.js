@@ -17,6 +17,10 @@ let Galaxy = DS.defineResource({
       planet: {
         localField: 'planets',
         foreignKey: 'galaxyId'
+      },
+      moon: {
+        localField: 'moons',
+        foreignKey: 'galaxyId'
       }
     }
   }
@@ -33,8 +37,6 @@ schemator.defineSchema('Galaxy', {
   }
 })
 
-
-
 function create(name, cb) {
   // Use the Resource Model to create a new galaxy
   let galaxy = { id: uuid.v4(), name: name };
@@ -42,10 +44,8 @@ function create(name, cb) {
   let error = schemator.validateSync('Galaxy', galaxy)
   
   if(error){
-    error.stack
     return cb(error);
   }
-
   Galaxy.create(galaxy).then(cb).catch(cb)
 }
 
