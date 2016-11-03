@@ -21,7 +21,7 @@ function defaultErrorHandler(err, req, res, next) {
   res.send(error);
 }
 
-var whitelist = ['http://localhost:8081', 'http://portal.boisecodeworks.com']; //
+var whitelist = ['http://localhost:8081', 'http://portal.boisecodeworks.com', 'https://jakeoverall.github.io']; //
 var corsOptions = {
   origin: function (origin, callback) {
     var originIsWhitelisted = whitelist.indexOf(origin) !== -1;
