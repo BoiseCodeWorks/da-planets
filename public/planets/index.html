@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html ng-app="da-planets" lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <h1>DA PLANETS WILL BE HERE SOON</h1>
 
-  <universe></universe>
+  <ui-view></ui-view>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-data/2.9.0/js-data.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-data-http/2.2.2/js-data-http.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0-beta.3/angular-ui-router.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-data-angular/3.2.1/js-data-angular.min.js"></script>
 
   <script src="app/init.js"></script>
+  <script src="app/config/data-adapter.js"></script>
+  <script src="app/config/data-store.js"></script>
+  <script src="app/config/routes.js"></script>
+
   <script src="app/components/galaxies/galaxies-component.js"></script>
+  <script src="app/components/galaxies/galaxy-component.js"></script>
 
 </body>
+
 </html>
