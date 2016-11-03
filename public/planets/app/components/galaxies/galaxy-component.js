@@ -18,7 +18,6 @@
     var gc = this
     DataStore.Planet.findAll({ where: { galaxyId: $stateParams.id } }).then(function (planets) {
       DataStore.Galaxy.find($stateParams.id).then(function (galaxy) {
-        debugger
         if (!galaxy) {
           gc.error = 'BAD ID DUDE'
         }
