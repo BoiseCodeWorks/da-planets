@@ -13,7 +13,7 @@ Perhaps one of the most difficult problems we face when building software is man
 - <a href=”https://en.wikipedia.org/wiki/One-to-many_(data_model)” target=”_blank”>One to Many</a>
 - <a href=”https://en.wikipedia.org/wiki/Many-to-many_(data_model)” target=”_blank”>Many to Many</a>
 
-Intelligent software companies will take a careful amount of time planning out these relationships prior to ever writing their first line of code for an application. While it may apear to many as a slow way to start an application having a clear consice plan of these relationships will save countless hours and keyboard headbanging from being the number one cause of death for a developer. 
+Intelligent software companies will take a careful amount of time planning out these relationships prior to ever writing their first line of code for an application. While it may appear to many as a slow way to start an application having a clear concise plan of these relationships will save countless hours and keyboard headbanging from being the number one cause of death for a developer. 
 
 Real world relationships are complex and often look something like <a href=”http://boycottnovell.com/wp-content/uploads/2010/02/software-map-with-arrows.png” target="_blank">this</a> when brought into code
 
@@ -23,7 +23,7 @@ For our purposes we will use a framework called <a href=”http://www.js-data.io
 
 ###Let’s start mapping
 
-This project has provided the basic starting points of an application to manage Galaxies, I know a big task right. Thinking about the relationships of space you will need to create a service and controller for each celestial body.The type of data that you store on each object is up to you.
+This project has provided the basic starting points of an application to manage Galaxies, I know a big task right. Thinking about the relationships of space you will need to create a service and controller for each celestial body. The type of data that you store on each object is up to you.
 
 Take your time to work on the relationships and the ability to create and read data first. Also take you time to really map out each of the items and try to identify the relationships they have between each other.
 
