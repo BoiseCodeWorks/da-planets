@@ -9,17 +9,17 @@ Although it may be the "Final Frontier" but we can still learn a lot from what w
 
 Perhaps one of the most difficult problems we face when building software is managing the relationships between objects. Life has almost an immeasurable level of connections and it is this vastness that makes building scalable software tasking. Fortunately most relationships can be describe as one of the following connections. 
 
-- <a href=”https://en.wikipedia.org/wiki/One-to-one_(data_model)” target=”_blank”>One to One</a>
-- <a href=”https://en.wikipedia.org/wiki/One-to-many_(data_model)” target=”_blank”>One to Many</a>
-- <a href=”https://en.wikipedia.org/wiki/Many-to-many_(data_model)” target=”_blank”>Many to Many</a>
+- [One to One](https://en.wikipedia.org/wiki/One-to-one_(data_model))
+- [One to Many](https://en.wikipedia.org/wiki/One-to-many_(data_model))
+- [Many to Many](https://en.wikipedia.org/wiki/Many-to-many_(data_model))
 
 Intelligent software companies will take a careful amount of time planning out these relationships prior to ever writing their first line of code for an application. While it may appear to many as a slow way to start an application having a clear concise plan of these relationships will save countless hours and keyboard headbanging from being the number one cause of death for a developer. 
 
-Real world relationships are complex and often look something like <a href=”http://boycottnovell.com/wp-content/uploads/2010/02/software-map-with-arrows.png” target="_blank">this</a> when brought into code
+Real world relationships are complex and often look something like [this](http://boycottnovell.com/wp-content/uploads/2010/02/software-map-with-arrows.png) when brought into code
 
-With all of the complexities involved in building out all of these relationships developers often turn to an [ORM](”https://en.wikipedia.org/wiki/Object-relational_mapping”) (Object Relational Mapper).
+With all of the complexities involved in building out all of these relationships developers often turn to an [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping) (Object Relational Mapper).
 
-For our purposes we will use a framework called mongoose. One of the best benefits to an ORM is they provide us with a programmable interface (**not a GUI**) that allows us to write all of our code the same regardless of the type of database that we are storing our information to. This flexibility helps tremendously when developers need to switch between test data and production data.  This quick switching of entire datastores is a small glimpse at one of the [S.O.L.I.D principles of Object Oriented programming](”https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design#dependency-inversion-principle”)
+For our purposes we will use a framework called mongoose. One of the best benefits to an ORM is they provide us with a programmable interface (**not a GUI**) that allows us to write all of our code the same regardless of the type of database that we are storing our information to. This flexibility helps tremendously when developers need to switch between test data and production data.  This quick switching of entire datastores is a small glimpse at one of the [S.O.L.I.D principles of Object Oriented programming](https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design#dependency-inversion-principle)
 
 ###Let’s start mapping
 
