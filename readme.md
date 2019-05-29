@@ -17,9 +17,9 @@ Intelligent software companies will take a careful amount of time planning out t
 
 Real world relationships are complex and often look something like <a href=”http://boycottnovell.com/wp-content/uploads/2010/02/software-map-with-arrows.png” target="_blank">this</a> when brought into code
 
-With all of the complexities involved in building out all of these relationships developers often turn to an <a href=”https://en.wikipedia.org/wiki/Object-relational_mapping” target=”_blank”>ORM (Object Relational Mapper).</a>
+With all of the complexities involved in building out all of these relationships developers often turn to an [ORM](”https://en.wikipedia.org/wiki/Object-relational_mapping”) (Object Relational Mapper).
 
-For our purposes we will use a framework called <a href=”http://www.js-data.io/” target=”_blank”>mongoose.</a> One of the best benefits to an ORM is they provide us with a programmable interface (**not a GUI**) that allows us to write all of our code the same regardless of the type of database that we are storing our information to. This flexibility helps tremendously when developers need to switch between test data and production data.  This quick switching of entire datastores is a small glimpse at one of the <a href=”https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design#dependency-inversion-principle” target=”_blank”>S.O.L.I.D principles of Object Oriented programming</a>
+For our purposes we will use a framework called mongoose. One of the best benefits to an ORM is they provide us with a programmable interface (**not a GUI**) that allows us to write all of our code the same regardless of the type of database that we are storing our information to. This flexibility helps tremendously when developers need to switch between test data and production data.  This quick switching of entire datastores is a small glimpse at one of the [S.O.L.I.D principles of Object Oriented programming](”https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design#dependency-inversion-principle”)
 
 ###Let’s start mapping
 
