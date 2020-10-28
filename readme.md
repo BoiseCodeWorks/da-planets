@@ -34,9 +34,13 @@ Take your time to work on the relationships and the ability to create and read d
 - Identify the relationships between each of your schemas
 
 Galaxy -> Star/Planet/Moon/Species
+
 Star -> Galaxy/Planet/Moon/Species
+
 Planet -> Galaxy/Star/Moon/Species
+
 Moon -> Galaxy/Star/Planet/Species
+
 Species -> Galaxy/Star/Planet/Moon // Hint save species for last Many to Many here it gets complicated
 
 - Build your schemas
